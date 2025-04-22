@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" data-layout-mode="fluid" data-menu-color="dark" data-topbar-color="light" data-layout-position="fixed" data-sidenav-size="default"><head>
+    <meta charset="utf-8">
+    <title>로그인 | login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta content="Coderthemes" name="author">
+    <!-- [LG00000000P]로그인 -->
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Theme Config Js -->
+    <script src="./assets/js/hyper-config.js"></script>
+
+    <!-- Vendor css -->
+    <link href="./assets/css/vendor.min.css" rel="stylesheet" type="text/css">
+	<link href="./assets/css/custom.css" rel="stylesheet" type="text/css">
+
+    <!-- App css -->
+    <link href="./assets/css/app-saas.min.css" rel="stylesheet" type="text/css" id="app-style">
+
+    <!-- Icons css -->
+    <link href="./assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/icons.min.css.map" rel="stylesheet" type="text/css">
+	<script src="https://accounts.google.com/gsi/client" async="" defer=""></script>
+
+</head>
+
+<body class="authentication-bg pb-0">
+
+    <div class="auth-fluid">
+        <!--Auth fluid left content -->
+        <div class="auth-fluid-form-box">
+            <div class="card-body d-flex flex-column h-100 gap-3">
+
+                <!-- Logo -->
+                <div class="auth-brand text-center text-lg-start">
+                   
+                </div>
+
+                <div class="my-auto">
+                    <!-- title-->
+                    <h4 class="mt-0">로그인</h4>
+                    <p class="text-muted mb-4">이메일 주소와 비밀번호를 입력하고 로그인하세요.</p>
+
+                    <!-- form -->
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="emailaddress" class="form-label">이메일</label>
+                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="이메일을 입력해주세요.">
+                        </div>
+                        <div class="mb-3">
+                            <a href="pages-recoverpw-2.html" class="float-end"><small>내 계정 찾기</small></a>
+                            <label for="password" class="form-label">비밀번호</label>
+                            <input class="form-control" type="password" required="" id="password" placeholder="비밀번호를 입력해주세요.">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="checkbox-signin">
+                                <label class="form-check-label" for="checkbox-signin">이메일 기억하기</label>
+                            </div>
+                        </div>
+                        <div class="d-grid mb-0 text-center">
+                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-login"></i> 로그인 </button>
+                        </div>
+                        <!-- social-->
+                        <div class="text-center mt-4">
+							<p class="text-muted font-16">아직 회원이 아니신가요? <a class="text-info" href="register.html">회원가입</a></p>
+                            <div style="display: flex; gap: 12px; justify-content: center; margin-top: 16px;">
+							  <!-- 구글 -->
+							  <a href="/google-login" title="GoogleLogin">
+								<img src="./assets/images/googlelogin.png"
+									 alt="Google"
+									 style="width: 48px; height: 48px; object-fit: cover;" />
+							  </a>
+
+							  <!-- 카카오 -->
+							  <a href="/kakao-login" title="KakaoLogin">
+								<img src="./assets/images/kakaologin.png"
+									 alt="kakao"
+									 style="width: 48px; height: 48px; object-fit: cover;" /></a>
+
+							  <!-- 네이버 -->
+							  <a href="/naver-login" title="NaverLogin">
+								  <img src="./assets/images/naverlogin.png"
+									 alt="naver"
+									 style="width: 48px; height: 48px; object-fit: cover;" />
+							  </a>
+							</div>
+
+                        </div>
+                    </form>
+                    <!-- end form-->
+                </div>
+
+                <!-- Footer-->
+                <footer class="footer footer-alt">
+                    <p class="text-muted">Not you? return <a href="pages-register-2.html" class="text-muted ms-1"><b>Sign Up</b></a></p>
+                </footer>
+
+            </div> <!-- end .card-body -->
+        </div>
+        <!-- end auth-fluid-form-box-->
+
+        <!-- Auth fluid right content -->
+        <div class="auth-fluid-right text-center">
+            <div class="auth-user-testimonial">
+            </div> <!-- end auth-user-testimonial-->
+        </div>
+        <!-- end Auth fluid right content -->
+    </div>
+    <!-- end auth-fluid-->
+    <!-- Vendor js -->
+    <script src="./assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="./assets/js/app.min.js"></script>
+
+
+
+</body>
+</html>

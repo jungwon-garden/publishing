@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko" data-bs-theme="light" data-layout-mode="fluid" data-menu-color="dark" data-topbar-color="light" data-layout-position="fixed" data-sidenav-size="default"><head>
+    <meta charset="utf-8">
+    <title>회원가입 | ragister.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta content="Coderthemes" name="author">
+    <!-- Pages Register 2 -->
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Theme Config Js -->
+    <script src="assets/js/hyper-config.js"></script>
+
+    <!-- Vendor css -->
+    <link href="assets/css/vendor.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+
+    <!-- App css -->
+    <link href="assets/css/app-saas.min.css" rel="stylesheet" type="text/css" id="app-style">
+
+    <!-- Icons css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</head>
+
+<body class="authentication-bg pb-0">
+
+    <div class="auth-fluid">
+        <!--Auth fluid left content -->
+        <div class="auth-fluid-form-box">
+            <div class="card-body d-flex flex-column h-100 gap-3">
+
+                <!-- Logo -->
+                <div class="auth-brand text-center text-lg-start">
+                </div>
+                
+                <!-- <div class="card">
+                  <div class="card-body">
+
+                      <h4 class="header-title mb-3"> Basic Wizard</h4>
+
+                      <form>
+                          <div id="basicwizard">
+
+                              <ul class="nav nav-pills nav-justified form-wizard-header mb-4" role="tablist">
+                                  <li class="nav-item" role="presentation">
+                                      <a href="#basictab1" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2 active" aria-selected="true" role="tab">
+                                          <i class="mdi mdi-account-circle font-18 align-middle me-1"></i>
+                                          <span class="d-none d-sm-inline">Account</span>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                      <a href="#basictab2" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2" aria-selected="false" role="tab" tabindex="-1">
+                                          <i class="mdi mdi-face-man-profile font-18 align-middle me-1"></i>
+                                          <span class="d-none d-sm-inline">Profile</span>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                      <a href="#basictab3" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2" aria-selected="false" role="tab" tabindex="-1">
+                                          <i class="mdi mdi-checkbox-marked-circle-outline font-18 align-middle me-1"></i>
+                                          <span class="d-none d-sm-inline">Finish</span>
+                                      </a>
+                                  </li>
+                              </ul>
+
+                              <div class="tab-content b-0 mb-0">
+                                  <div class="tab-pane active show" id="basictab1" role="tabpanel">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <div class="row mb-3">
+                                                  <label class="col-md-3 col-form-label" for="userName">User name</label>
+                                                  <div class="col-md-9">
+                                                      <input type="text" class="form-control" id="userName" name="userName" value="hyper">
+                                                  </div>
+                                              </div>
+                                              <div class="row mb-3">
+                                                  <label class="col-md-3 col-form-label" for="password"> Password</label>
+                                                  <div class="col-md-9">
+                                                      <input type="password" id="password" name="password" class="form-control" value="123456789">
+                                                  </div>
+                                              </div>
+
+                                              <div class="row mb-3">
+                                                  <label class="col-md-3 col-form-label" for="confirm">Re Password</label>
+                                                  <div class="col-md-9">
+                                                      <input type="password" id="confirm" name="confirm" class="form-control" value="123456789">
+                                                  </div>
+                                              </div>
+                                          </div> 
+                                      </div>
+
+                                      <ul class="list-inline wizard mb-0">
+                                          <li class="next list-inline-item float-end">
+                                              <a href="javascript:void(0);" class="btn btn-info">Add More Info <i class="mdi mdi-arrow-right ms-1"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="tab-pane" id="basictab2" role="tabpanel">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <div class="row mb-3">
+                                                  <label class="col-md-3 col-form-label" for="name"> First name</label>
+                                                  <div class="col-md-9">
+                                                      <input type="text" id="name" name="name" class="form-control" value="Francis">
+                                                  </div>
+                                              </div>
+                                              <div class="row mb-3">
+                                                  <label class="col-md-3 col-form-label" for="surname"> Last name</label>
+                                                  <div class="col-md-9">
+                                                      <input type="text" id="surname" name="surname" class="form-control" value="Brinkman">
+                                                  </div>
+                                              </div>
+
+                                              <div class="row mb-3">
+                                                  <label class="col-md-3 col-form-label" for="email">Email</label>
+                                                  <div class="col-md-9">
+                                                      <input type="email" id="email" name="email" class="form-control" value="cory1979@hotmail.com">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <ul class="pager wizard mb-0 list-inline">
+                                          <li class="previous list-inline-item disabled">
+                                              <button type="button" class="btn btn-light"><i class="mdi mdi-arrow-left me-1"></i> Back to Account</button>
+                                          </li>
+                                          <li class="next list-inline-item float-end">
+                                              <button type="button" class="btn btn-info">Add More Info <i class="mdi mdi-arrow-right ms-1"></i></button>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="tab-pane" id="basictab3" role="tabpanel">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <div class="text-center">
+                                                  <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                                  <h3 class="mt-0">Thank you !</h3>
+
+                                                  <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam
+                                                      mattis dictum aliquet.</p>
+
+                                                  <div class="mb-3">
+                                                      <div class="form-check d-inline-block">
+                                                          <input type="checkbox" class="form-check-input" id="customCheck1">
+                                                          <label class="form-check-label" for="customCheck1">I agree with the Terms and Conditions</label>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div> 
+                                      </div>
+
+                                      <ul class="pager wizard mb-0 list-inline mt-1">
+                                          <li class="previous list-inline-item disabled">
+                                              <button type="button" class="btn btn-light"><i class="mdi mdi-arrow-left me-1"></i> Back to Profile</button>
+                                          </li>
+                                          <li class="next list-inline-item float-end">
+                                              <button type="button" class="btn btn-info">Submit</button>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </form>
+
+                  </div>
+              </div> -->
+
+                <div class="my-auto">
+                    <!-- title-->
+                    <h4 class="mt-3">회원가입</h4>
+                    <p class="text-muted mb-4"></p>
+
+                    <!-- form -->
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="emailaddress" class="form-label">이메일 주소</label>
+                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="이메일 주소를 입력해주세요.">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">비밀번호</label>
+                            <input class="form-control" type="password" required="" id="password" placeholder="비밀번호를 입력해주세요.">
+                        </div>
+                        <div class="border rounded p-3 custom-form">
+						  <!-- 전체 동의 -->
+						  <div class="form-check mb-2">
+							<input type="checkbox" class="form-check-input" id="agreeAll">
+							<label class="form-check-label" for="agreeAll">모두 동의합니다.</label>
+						  </div>
+
+						  <!-- 구분선 -->
+						  <hr class="my-3" />
+
+						  <!-- 개별 항목 -->
+						  <div class="form-check mb-2 dropdown-form">
+							<input type="checkbox" class="form-check-input" id="agreeAge">
+							<label class="form-check-label" for="agreeAge">만 14세 이상입니다.</label>
+						  </div>
+
+						  <div class="form-check mb-2 dropdown-form">
+							<input type="checkbox" class="form-check-input" id="agreeService">
+							<label class="form-check-label" for="agreeService">(필수) 서비스 이용약관에 동의합니다.</label>
+						  </div>
+
+						  <div class="form-check mb-2 dropdown-form">
+							<input type="checkbox" class="form-check-input" id="agreePrivacy">
+							<label class="form-check-label" for="agreePrivacy">(필수) 개인정보 수집/이용에 동의합니다.</label>
+						  </div>
+
+						  <div class="form-check dropdown-form">
+							<input type="checkbox" class="form-check-input" id="agreeMarketing">
+							<label class="form-check-label" for="agreeMarketing">(선택) 마케팅 수신 · 홍보 목적의 개인정보 수집 및 이용에 동의합니다.</label>
+						  </div>
+						</div>
+                    </form>
+                    <!-- end form-->
+                     <div class="mt-3 d-grid text-center">
+                        <button class="btn btn-primary btn-lg" type="submit">다음</button>
+                     </div>
+
+                <!-- Footer-->
+                <footer class="footer footer-alt">
+                    <p class="text-muted">이미 계정이 있나요? <a href="login.html" class="ms-1 text-info"><b>로그인</b></a></p>
+                </footer>
+
+            </div> <!-- end .card-body -->
+        </div>
+        <!-- end auth-fluid-form-box-->
+
+        <!-- Auth fluid right content -->
+        <div class="auth-fluid-right text-center">
+            <div class="auth-user-testimonial">
+               
+            </div> <!-- end auth-user-testimonial-->
+        </div>
+        <!-- end Auth fluid right content -->
+    </div>
+    <!-- end auth-fluid-->
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+
+
+</body>
+</html>
